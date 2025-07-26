@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hello-app:
+    build: .
+    ports:
+      - "8080:3000"
+    volumes:
+      - logs-data:/usr/src/app/logs
+volumes:
+  logs-data:
